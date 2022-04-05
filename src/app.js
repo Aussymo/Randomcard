@@ -56,5 +56,22 @@ function randomCard(cards) {
     "</span>";
   document.body.appendChild(card);
 }
+const deck = document.createElement("button");
+deck.innerHTML = "New Card";
+deck.addEventListener("click", function() {
+  window.location.reload();
+});
+
+deck.classList.add("btn");
+document.body.appendChild(deck);
+
+const newDeck = document.createElement("button");
+newDeck.innerHTML = "New Card";
+newDeck.addEventListener("click", function() {
+  window.location.reload();
+});
+
+newDeck.classList.add("btn2");
+document.body.appendChild(newDeck);
 const cards = deckBuilder();
 randomCard(cards);
