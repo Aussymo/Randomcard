@@ -65,13 +65,5 @@ deck.addEventListener("click", function() {
 deck.classList.add("btn");
 document.body.appendChild(deck);
 
-const newDeck = document.createElement("button");
-newDeck.innerHTML = "New Card";
-newDeck.addEventListener("click", function() {
-  window.location.reload();
-});
-
-newDeck.classList.add("btn2");
-document.body.appendChild(newDeck);
 const cards = deckBuilder();
 randomCard(cards);
